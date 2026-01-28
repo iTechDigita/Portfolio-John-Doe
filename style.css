@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header Styling */
+header {
+    background-color: #011d39;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #0A4174;
+    display: flex;
+    justify-content: center; /* Centers the links */
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links */
+nav a:hover {
+    background-color: #49769f;
+    border-radius: 4px;
+}
+/* Layout for the main content area */
+main {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 20px;               /* Adds space between text and video */
+    padding: 20px;
+}
+
+/* Ensure the text section takes up appropriate space */
+#summary {
+    flex: 1;
+}
+
+/* Ensure the video section fits its content */
+#summary-video {
+    flex: 1;
+}
+
+/* Makes the video responsive within its container */
+video {
+    max-width: 100%;
+    height: auto;
+}
