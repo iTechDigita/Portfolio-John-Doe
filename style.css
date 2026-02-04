@@ -1,0 +1,225 @@
+/* GENERAL */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* NAVIGATION */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: greenyellow;
+    padding: 12px;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 20px;
+}
+
+/* SECTIONS */
+section {
+    margin-bottom: 40px;
+}
+
+/* ABOUT SECTION */
+.about-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-text,
+.about-video {
+    width: 50%;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* LISTS */
+ul {
+    padding-left: 20px;
+    list-style-type: square;
+}
+.education-card {
+    background: #f4f4f4;        /* light grey background */
+    padding: 15px;
+    border: 1px solid #ccc;     /* simple border */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.education-card h3 {
+    margin-top: 0;
+    color: #222;
+}
+
+.education-card p {
+    margin: 5px 0;
+}
+
+
+/* Technical skills  */
+
+/* TABLE WRAPPER FOR RESPONSIVENESS */
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+/* MODERN TABLE */
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+.modern-table thead {
+    background: #222;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.modern-table th,
+.modern-table td {
+    padding: 14px 16px;
+    text-align: left;
+}
+
+/* ROW DIVIDERS */
+.modern-table tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+/* ZEBRA STRIPING */
+.modern-table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* HOVER EFFECT */
+.modern-table tbody tr:hover {
+    background: #eaffd0;
+    transition: 0.2s ease;
+}
+
+/* MOBILE IMPROVEMENT */
+@media (max-width: 768px) {
+    .modern-table th,
+    .modern-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+
+/* CONTACT WRAPPER */
+.contact-box {
+    display: flex;
+    gap: 20px; /* small gap = visually connected */
+    margin-top: 20px;
+    background: #f4f4f4;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    flex: 1;
+    font-size: 15px;
+}
+
+.contact-info p {
+    margin: 12px 0;
+}
+
+.contact-info i {
+    color: greenyellow;
+    margin-right: 8px;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background: white;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    background: #222;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: greenyellow;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-text,
+    .about-video {
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+    .contact-box {
+    flex-direction: column;
+    }
+
+}
